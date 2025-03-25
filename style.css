@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.Lines-names{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* padding: 10px; */
+    background-color: #f1f1f1;
+    border-bottom: 1px solid #000;
+
+
+    & select{
+        outline: none;
+        border: none;
+        background-color: transparent;
+        padding: 5px 10px;
+        cursor: pointer;
+    }
+    & img{
+        width: 35px;
+    }
+    .perfil{
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        padding: 10px;
+    }
+    & #ShowTable{
+        cursor: pointer;
+        
+    }
+}
+.Line-Choise{
+    padding: 10px;
+}
