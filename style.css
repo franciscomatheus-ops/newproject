@@ -2,6 +2,16 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    user-select: none;
+}
+html, body{
+    height: 100%;
+    width: 100%;
+    font-family: 'Roboto', sans-serif;
+}
+body{
+    display: flex;
+    flex-direction: column;
 }
 
 .Lines-names{
@@ -12,14 +22,6 @@
     background-color: #f1f1f1;
     border-bottom: 1px solid #000;
 
-
-    & select{
-        outline: none;
-        border: none;
-        background-color: transparent;
-        padding: 5px 10px;
-        cursor: pointer;
-    }
     & img{
         width: 35px;
     }
@@ -34,9 +36,37 @@
     }
     & #ShowTable{
         cursor: pointer;
-        
     }
+}
+select {
+    outline: none;
+    border: none;
+    border-bottom: 2px solid rgb(0, 157, 255);
+    background-color: transparent;
+    padding: 5px 15px;
+    cursor: pointer;
 }
 .Line-Choise{
     padding: 10px;
+}
+.body_table{
+    /* display: flex; */
+    position: relative;
+    height: 100%;
+    width: 100%;
+    /* overflow: auto; */
+
+    & div{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+    }
+    & div:nth-child(1){
+        display: flex;
+        
+    }
+    & div:nth-child(2){
+        top: 100%;
+        background-color: red;
+    }
 }
